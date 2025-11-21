@@ -1,3 +1,6 @@
+
+
+import CategoriesSection from "./CategoriesSection";
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
@@ -18,29 +21,30 @@ export default function Home() {
         </div>
 
         <nav className="hidden sm:flex items-center gap-4 text-xs text-slate-300">
-          <a href="#services" className="hover:text-teal-400 transition">
-            Services
-          </a>
-          <a href="#routes" className="hover:text-teal-400 transition">
-            Routes
-          </a>
-          <a href="#process" className="hover:text-teal-400 transition">
-            How it works
-          </a>
-          <a href="#contacts" className="hover:text-teal-400 transition">
-            Contacts
-          </a>
-          <div className="h-4 w-px bg-slate-700" />
-          <a href="/ru" className="hover:text-teal-400 transition">
-            RU
-          </a>
-          <a href="/tj" className="hover:text-teal-400 transition">
-            TJ
-          </a>
-          <a href="/en" className="hover:text-teal-400 transition">
-            EN
-          </a>
-        </nav>
+  <a href="#services" className="hover:text-teal-400 transition">
+    Services
+  </a>
+  <a href="#routes" className="hover:text-teal-400 transition">
+    Routes
+  </a>
+  <a href="#process" className="hover:text-teal-400 transition">
+    How it works
+  </a>
+  <a href="#contacts" className="hover:text-teal-400 transition">
+    Contacts
+  </a>
+  <div className="h-4 w-px bg-slate-700" />
+  <a href="/ru" className="hover:text-teal-400 transition">
+    RU
+  </a>
+  <a href="/ko" className="hover:text-teal-400 transition">
+    KR
+  </a>
+  <a href="/en" className="hover:text-teal-400 transition">
+    EN
+  </a>
+</nav>
+
       </header>
 
       {/* HERO */}
@@ -362,6 +366,8 @@ https://chat.whatsapp.com/EpSqRxMPVfwDxAugGjwSp1?mode=hqrc"
           <div>Partnership Without Borders · Cars from Korea</div>
         </footer>
       </section>
+      <CategoriesSection lang="ru" />
+
     </main>
   );
 }
